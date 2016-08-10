@@ -21,7 +21,7 @@ compiling all jade templates with the extension `.jade`. Files with the
 extension `.static.jade` will automatically be compiled as static files
 instead of being inserted as javascript templates.
 
-You can configure the expression used to decide which files are static 
+You can configure the expression used to decide which files are static
 using the `plugins.jaded.staticPatterns` option as described in the next
 section.
 
@@ -44,7 +44,7 @@ do this, you would use the following pattern:
 
     exports.config =
       plugins:
-        jaded:
+        jade:
           staticPatterns: /^app(\/|\\)static(\/|\\)(.+)\.jade$/
 
 Now, the file `app/static/about/contact_us.jade` will be statically compiled
@@ -56,9 +56,8 @@ you could use the following:
 
     exports.config =
       plugins:
-        jaded:
-          jade:
-            pretty: yes
+        jade:
+          pretty: yes
 
 All options from [the jade API][api] can be provided this way.
 
