@@ -1,6 +1,6 @@
 describe 'Plugin', ->
   beforeEach ->
-    @plugin = new Plugin {}
+    @plugin = new Plugin paths: {}
 
   it 'should be a brunch plugin', ->
     expect(@plugin.brunchPlugin).to.be.true
